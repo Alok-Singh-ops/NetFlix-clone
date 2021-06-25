@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.rowR {
+  display: block;
+  position: relative;
+  margin: 50px 0;
+}
+.containerR {
+  width: 150px;
+  max-width: 1240px;
+  margin: auto;
+}
+.grid-rowR.gridR-4-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.cardsR {
+  background: #fff;
+  height: 50%;
+  width: 98%;
+  overflow: hidden;
+  box-shadow: 5px 8px 15px -10px rgba(0, 0, 0, 0.25);
+}
+.card_imageR {
+  width: 100%;
+  height: 100%;
+}
+.card_imageR.loadingR {
+  width: 102%;
+  height: 88px;
+}
+.card_titleR {
+  padding: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.card_titleR.loadingR {
+  width: 52%;
+  height: 1rem;
+  margin: 1.8rem 1rem 3.2rem 1rem;
+  border-radius: 3px;
+  position: relative;
+}
+.card_descriptionR {
+  padding: 8px;
+  font-size: 16px;
+}
+.card_descriptionR.loadingR {
+  height: 3rem;
+  margin: 1rem;
+  border-radius: 3px;
+}
+.loadingR {
+  position: relative;
+  background: #cccccc;
+}
+.loadingR:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100px);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: loading 0.8s infinite;
+}
+@keyframes loading {
+  100% {
+    transform: translateX(100%);
+  }
+}
