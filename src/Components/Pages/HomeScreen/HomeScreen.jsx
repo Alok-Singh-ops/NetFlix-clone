@@ -1,16 +1,16 @@
 import React,{useState,useEffect,useRef,} from 'react'
 import { Route, Link, BrowserRouter as Router,Switch } from 'react-router-dom' 
-import Video from './Video'
-import Navbar from './Navbar/Navbar'
+// import Video from '../../Video'
+import SearchForm from '../../SearchForm/SearchForm'
+import Navbar from '../../Navbar/Navbar'
 import Banner from './Banner/Banner'
 // import request from '../API/Request'
 // import ytsReq from '../API/ytsReq'
 // import axios from "../API/axios1";
 // import ytsAxios from '../API/ytsAxios';
-import Row from "../Components/Row/Row"
+import Row from "./Row/Row"
 import VideoSection from './Row/VideoPlayer/VideoSection';
-
-import Loading from '../Components/Loading/Loading';
+import Loading from '../../Loading/Loading';
 
 
 const HomeScreen = () => {
@@ -55,6 +55,7 @@ const HomeScreen = () => {
   return (
     <div className = 'homeScreen'>
       <Navbar />
+      <SearchForm/>
       {
         loading? <Loading />
         :<>

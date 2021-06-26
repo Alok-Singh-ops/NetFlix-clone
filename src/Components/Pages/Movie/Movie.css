@@ -1,0 +1,64 @@
+.video {
+  background-color: #0c0c0c;
+  background-image: linear-gradient(
+    315deg,
+    #0c0c0c 0%,
+    #000000 26%,
+    #530301 52%,
+    #3f0101 57%,
+    #4d0101 99%
+  );
+  height: 100%;
+  width: 100vw;
+}
+
+.video-content {
+  color: rgb(247, 243, 238);
+  line-height: 1.6rem;
+  /* background-color: rgb(189, 189, 241); */
+  width: 80%;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 18rem 0 0 0;
+  /* position: absolute; */
+  margin-left: 3rem;
+  /* margin-top: 20rem; */
+}
+
+.video-poster {
+  width: 40%;
+  background-position: center center;
+  height: 12rem;
+  object-fit: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.video-details {
+  width: 50%;
+}
+
+.video-info {
+  margin-top: 1.4rem;
+  font-size: 15px;
+  display: grid;
+  text-align: center;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.video-info div h4 {
+  /* width: 50px; */
+  display: inline;
+  font-weight: 800;
+  /* background-color: blue; */
+}
+
+.vid-info {
+  font-weight: lighter;
+}
+
+.video-desc {
+  margin-top: 0.8rem;
+  margin-left: 1rem;
+}

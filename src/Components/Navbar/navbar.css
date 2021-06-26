@@ -37,3 +37,26 @@
 .nav-black {
   background-color: rgb(255, 255, 255);
 }
+
+.banner.banner-button.btn-sm {
+  width: 60px;
+  padding: 0.5rem;
+  margin-left: 0.7rem;
+}
+
+.searchForm {
+  position: absolute;
+  right: 8rem;
+  top: 7px;
+}
+
+.nav-contents .searchForm input {
+  padding: 10px;
+  box-shadow: 2px 3px 5px -1px rgb(0 0 0 / 48%);
+  -webkit-box-shadow: -1px 4px 10px -2px rgb(0 0 0 / 48%);
+  -moz-box-shadow: -4px 3px 5px -1px rgba(0, 0, 0, 0.48);
+  height: 1.5rem;
+  border-radius: 3px;
+  border: 0.4px solid #d0d0d0;
+  outline: none;
+}

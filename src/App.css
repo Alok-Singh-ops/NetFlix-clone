@@ -13,3 +13,13 @@ body {
 .app {
   background-color: black;
 }
+#app {
+  position: relative;
+}
+
+.player {
+  position: absolute;
+  top: 0;
+  margin: 5rem auto 0 17rem;
+  width: 50%;
+}

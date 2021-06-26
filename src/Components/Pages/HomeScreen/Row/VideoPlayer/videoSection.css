@@ -20,6 +20,10 @@
 
 .movie-content {
   width: 45%;
+  margin-top: 0.8rem;
+}
+.link {
+  width: 100%;
   margin-top: 1rem;
 }
 
@@ -34,11 +38,13 @@
 
 .btn.btn-videoSection {
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
   color: white;
+  display: block;
   outline: none;
-  width: 100%;
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
-  margin: 2.5rem 0 0 2rem;
+  margin: 0rem 0 0 2rem;
   border: none;
   transition: all 0.3s ease-in;
   background-color: rgb(17, 17, 17, 0.66);

@@ -22,7 +22,8 @@ const VideoSection = ({genre}) => {
         <div className="desc">
           {trueCate(`${genre.summary}`,180)}
         </div>
-        <Link to = {
+        <div className="link">
+        <Link  className = "btn btn-videoSection" to = {
           {
             pathname: '/video',
             state: {
@@ -30,6 +31,8 @@ const VideoSection = ({genre}) => {
             }
           }
         }>Play</Link>
+
+        </div>
       </div>
       <div className="background-image" style = {{
         backgroundImage: `url("${genre.medium_cover_image}")`
