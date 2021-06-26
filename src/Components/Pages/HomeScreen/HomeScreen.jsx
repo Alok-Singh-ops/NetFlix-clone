@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router,Switch } from 'react-router-dom'
 import SearchForm from '../../SearchForm/SearchForm'
 import Navbar from '../../Navbar/Navbar'
 import Banner from './Banner/Banner'
+
 // import request from '../API/Request'
 // import ytsReq from '../API/ytsReq'
 // import axios from "../API/axios1";
@@ -11,7 +12,7 @@ import Banner from './Banner/Banner'
 import Row from "./Row/Row"
 import VideoSection from './Row/VideoPlayer/VideoSection';
 import Loading from '../../Loading/Loading';
-
+import './homeScreen.css'
 
 const HomeScreen = () => {
 

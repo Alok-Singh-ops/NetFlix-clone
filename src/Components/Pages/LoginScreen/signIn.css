@@ -1,0 +1,65 @@
+.signin-page {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: -7px 3px 18px -8px rgba(0, 0, 0, 0.82);
+  -webkit-box-shadow: -7px 3px 18px -8px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: -7px 3px 18px -8px rgba(0, 0, 0, 0.82);
+  box-shadow: 7px -3px -18px 8px rgba(0, 0, 0, 0.82);
+  -webkit-box-shadow: 7px -3px -18px 8px rgba(0, 0, 0, 0.82);
+  -moz-box-shadow: 7px -3px -18px 8px rgba(0, 0, 0, 0.82);
+  border-radius: 5px;
+  /* max-width: 300px; */
+  /* width: 30rem; */
+  padding: 55px;
+
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.signin-page > form {
+  margin-top: 8px;
+}
+.signin-page input {
+  border-radius: 3px;
+
+  padding-left: 5px;
+  height: 30px;
+  outline: none;
+  border: none;
+  margin: 10px;
+}
+
+input[type="password"] {
+  border-radius: 3px;
+  display: block;
+}
+
+.btn.btn-signIn {
+  border-radius: 3px;
+  color: white;
+  width: 90%;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: rgb(197, 2, 2);
+}
+
+.btn.btn-signIn:hover {
+  background-color: rgb(163, 4, 4);
+}
+
+.signin-page > form > h4 {
+  font-weight: 100;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.signin-page form .form-sign-in {
+  color: gray;
+}
+
+.signin-page form .form-sign-in:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
