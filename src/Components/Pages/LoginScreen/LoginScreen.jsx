@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../../../assests/images/netflix-logo.png";
+import { Link } from 'react-router-dom';
 import SignIn from './SignIn';
 import './loginScreen.css'
 
@@ -14,7 +15,9 @@ const LoginScreen = () => {
 
     <div className = 'loginScreen'>
       <div className="loginScreen-background">
-        <img src={logo} alt="" className = "loginScreen-logo" />
+        <Link to = '/'>
+          <img src={logo} alt="" className = "loginScreen-logo" />
+        </Link>
       </div>
       <button className="login-btn" onClick = {handleClick}>Sign in</button>
 

@@ -1,19 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom';
 import './searchResult.css'
 
 
 const SearchResult = ({element}) => {
-  const [searchMovie,setSearchMovie] = useState();
   const handleClick = ()=>{
       console.log("object")
   }
-  
-  
-
   return (
     <>
-
     <div className = 'search-result' onClick = {handleClick}>
         <div className="card-img" style = {{backgroundImage: `url("${element.medium_cover_image}")`,}}>
         </div>
@@ -34,9 +29,7 @@ const SearchResult = ({element}) => {
           </div>
         </div>
     </div>
-
     </>
   )
 }
-
 export default SearchResult

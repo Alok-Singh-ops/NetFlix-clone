@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Route, Link, BrowserRouter as Router, Switch } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import HomeScreen from "./Components/Pages/HomeScreen/HomeScreen";
 import Video from "./Components/Pages/Movie/Movie.jsx";
 import Search from "./Components/Pages/Search//Search";
@@ -9,10 +9,11 @@ import LoginScreen from "./Components/Pages/LoginScreen/LoginScreen";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
+import SignIn from "./Components/Pages/LoginScreen/SignIn";
+
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
-  const [email, setEmail] = useState();
   useEffect(() => {
     const unSubs = auth.onAuthStateChanged((user) => {
       if (user) {
@@ -23,7 +24,6 @@ function App() {
             email: user.email,
           })
         );
-        setEmail(user.email);
       } else {
         //logout
         dispatch(logout());
@@ -52,7 +52,10 @@ function App() {
               <Search />
             </Route>
             <Route exact path='/profile'>
-              <Profile email={email} />
+              <Profile />
+            </Route>
+            <Route exact path='/signin'>
+              <SignIn />
             </Route>
           </Switch>
         )}

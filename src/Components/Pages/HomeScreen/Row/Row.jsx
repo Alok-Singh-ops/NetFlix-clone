@@ -1,56 +1,31 @@
 import React,{useState,useEffect,useRef} from 'react'
 import ReactStars from 'react-rating-stars-component'
 import {Link} from 'react-scroll'
-
-// import axios from '../../API/axios1';
-// import Loading from './LoadingRow'
 import LoadingRowSection from './LoadingSection'
 import './row.css';
-
-
-
 const Row = ({genre,isLarge = false,setVideo,title}) => {
-  
-  // console.log(item[Object.keys(item)[0]]);
   const[list,setList] = useState([]);
   const[loading,setLoading] = useState(false);
   const[imgLoading,setImgLoading] = useState(false);
-  
-  // const url = item[Object.keys(item)[0]];
 
   let isRendered = useRef(false);
   useEffect(() => {
     setLoading(true)
     setImgLoading(true);
     isRendered.current = true;
-    async function get(){
-      const res = await fetch(`https://yts.mx/api/v2/list_movies.json/?genre=${genre}`);
-      const data = await res.json();
-      return data
-    }
+    
     if(isRendered){
+      async function get(){
+        const res = await fetch(`https://yts.mx/api/v2/list_movies.json/?genre=${genre}`);
+        const data = await res.json();
+        return data
+      }
       get().then((response)=>{
         setList(response.data.movies);
       })
-
     }
-
-    //Handling the requests
-      // isRendered = true;
-      // axios
-      //     .get(fetchUrl)
-      //     .then(res => {
-      //         if (isRendered) {
-      //             setList(res.data.results);
-      //         }
-      //         return null;
-      //     })
-      //     .catch(err => console.log(err));
-
-          //Handle the Fade
-          setLoading(false);
+      setLoading(false);
             handleLoad(false);
-
       return () => {
           isRendered.current = false;
       };
@@ -83,32 +58,6 @@ const Row = ({genre,isLarge = false,setVideo,title}) => {
     }
   }
 
-  
-
-
-
-
-  // useEffect(()=>{
-
-  //   const source = axios.CancelToken.source();
-
-  //   const getData = async()=>{
-  //     const data = await axios.get(fetchUrl);
-  //     setList(data.data.results);
-  //     return data;
-  //   }
-
-  //   getData();
-
-
-  //   return ()=>{
-  //     source.cancel();
-  //   }
-  // },[fetchUrl])
-  
-  // const baseUrl = "https://image.tmdb.org/t/p/original/";
-// console.log(list);
-
 
   return (
         <div className="row-section">
@@ -119,7 +68,7 @@ const Row = ({genre,isLarge = false,setVideo,title}) => {
               :list.map((movie,index) =>
                 <Link to = 'movie-details' smooth = {true}>
                   <div className="row-content" onClick = {()=>handleClicked(movie)}>
-                  <img className = {`row-poster ${isLarge? 'row-posterLarge': '' }`} key = {index} onLoad = {handleLoad} src= {movie.medium_cover_image} alt=""  y/>
+                  <img className = {`row-poster ${isLarge? 'row-posterLarge': '' }`} key = {index} onLoad = {handleLoad} src= {movie.medium_cover_image} alt=""/>
                     {
                       imgLoading ? <> </> 
                       : movie.title_long ?
@@ -148,9 +97,6 @@ const Row = ({genre,isLarge = false,setVideo,title}) => {
           </div>
         </div>
         </div>
-
-        
   )
 }
-
 export default Row

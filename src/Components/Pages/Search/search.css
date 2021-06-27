@@ -12,12 +12,8 @@
 }
 
 .searched-content {
-  /* background-color: red; */
   margin: 7rem auto 0 auto;
   width: 85%;
-  /* display: grid;
-  grid-template-columns: repeat(3, 130px);
-  grid-column-gap: 12rem; */
   display: flex;
   flex-wrap: wrap;
 

@@ -12,19 +12,15 @@ const Footer = () => {
             </div>
             <div className="lower">
          <div className="topic">
-         <a href="https://forms.gle/VQqAwNgTVjRAiNGm7" target = "_blank" rel = "noopener noreferrer" classNameName = 'banner-button btn-foot'>Rate</a>
+         <a href="https://forms.gle/VQqAwNgTVjRAiNGm7" target = "_blank" rel = "noopener noreferrer" className = 'banner-button btn-foot'>Rate</a>
         </div>
        </div>
      </div>
-     {/* <div className="middle box">
-       <div className="topic">Our Services</div>
-       
-     </div> */}
      <div className="right box">
          <div className="media-icons">
-           <a href="https://www.facebook.com/aloksshiv" target = "_blank"><i className="fab fa-facebook-f"></i></a>
-           <a href="https://www.instagram.com/aloksingh_7/" target = "_blank"><i className="fab fa-instagram"></i></a>
-           <a href="https://www.linkedin.com/in/alok-singh-85571aa8" target = "_blank"><i className="fab fa-linkedin-in"></i></a>
+           <a href="https://www.facebook.com/aloksshiv" target = "_blank" rel = "noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+           <a href="https://www.instagram.com/aloksingh_7/" target = "_blank" rel = "noopener noreferrer"><i className="fab fa-instagram"></i></a>
+           <a href="https://www.linkedin.com/in/alok-singh-85571aa8" target = "_blank" rel = "noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
          </div>
      </div>
    </div>
@@ -34,5 +30,4 @@ const Footer = () => {
  </footer>
   )
 }
-
 export default Footer

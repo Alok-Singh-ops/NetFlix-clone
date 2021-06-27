@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import { useHistory } from 'react-router';
 
 const SearchForm = ()=>{
@@ -18,9 +18,8 @@ const SearchForm = ()=>{
       }
     })
     setText('');
-  }
-  
-  
+  } 
+
   return (
       <div className="searchForm">
             <form onSubmit = {handleSubmit}>
@@ -30,5 +29,4 @@ const SearchForm = ()=>{
           </div>
   )
 }
-
 export default SearchForm
