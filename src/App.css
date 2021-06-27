@@ -20,6 +20,9 @@ body {
 .player {
   position: absolute;
   top: 0;
-  margin: 5rem auto 0 17rem;
-  width: 50%;
+  margin: 4rem auto 0 auto;
+  width: 100%;
+}
+#player {
+  padding: 21px;
 }

@@ -20,7 +20,7 @@ const VideoSection = ({genre}) => {
       <div className="movie-content">
         <h2>{genre.title_long}</h2>
         <div className="desc">
-          {trueCate(`${genre.summary}`,180)}
+          {trueCate(`${genre.summary}`,130)}
         </div>
         <div className="link">
         <Link  className = "btn btn-videoSection" to = {

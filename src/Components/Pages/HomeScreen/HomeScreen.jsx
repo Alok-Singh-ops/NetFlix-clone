@@ -56,7 +56,6 @@ const HomeScreen = () => {
   return (
     <div className = 'homeScreen'>
       <Navbar />
-      <SearchForm/>
       {
         loading? <Loading />
         :<>

@@ -43,7 +43,6 @@
   padding: 0.5rem;
   margin-left: 0.7rem;
 }
-
 .searchForm {
   position: absolute;
   right: 8rem;
@@ -59,4 +58,53 @@
   border-radius: 3px;
   border: 0.4px solid #d0d0d0;
   outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding: 23px;
+  }
+
+  .nav-contents {
+    position: inherit;
+    top: 10px;
+  }
+
+  .nav-logo {
+    padding: 0;
+    margin-left: 7px;
+    width: 80px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+
+  .searchForm {
+    width: 17rem;
+    position: initial;
+    margin-left: 6rem;
+  }
+  .nav-contents .searchForm input {
+    padding: 6px;
+    width: 8rem;
+  }
+
+  .nav-content-avatar {
+    margin: 4px;
+  }
+
+  .nav-avatar {
+    cursor: pointer;
+    width: 20px;
+    position: initial;
+    height: 20px;
+  }
+
+  .nav-content-avatar {
+    margin: auto;
+  }
+  .nav-avatar {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
 }

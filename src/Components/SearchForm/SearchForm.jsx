@@ -24,7 +24,7 @@ const SearchForm = ()=>{
   return (
       <div className="searchForm">
             <form onSubmit = {handleSubmit}>
-              <input type="text" onChange = {handleChange} value = {text}/>
+              <input type="text" onChange = {handleChange} value = {text} placeholder = "Search Movies..."/>
               <button type = "submit" className = "banner banner-button btn-sm">Search</button>
             </form>
           </div>

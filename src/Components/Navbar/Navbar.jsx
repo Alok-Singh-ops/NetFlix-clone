@@ -48,11 +48,15 @@ const Navbar = () => {
   return (
     <nav className = {`nav ${show && 'nav-black'}`}>
       <div className="nav-contents">
-        <Link to = '/'>
-          <img className = 'nav-logo' src = {logo} alt = 'NetFlix' />
+          <div className="nav-content-logo">
+          <Link to = '/'>
+            <img className = 'nav-logo' src = {logo} alt = 'NetFlix' />
         </Link>
+          </div>
         <SearchForm/>
+        <div className="nav-content-avatar">
         <img className = 'nav-avatar' src={avatar} alt = 'User'  onClick = {()=>{ history.push("profile")}}/>
+        </div>
       </div>
     </nav>
   )

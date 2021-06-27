@@ -33,6 +33,7 @@
 }
 
 .login-content {
+  line-height: 1.25;
   position: absolute;
   top: 30%;
   text-align: center;

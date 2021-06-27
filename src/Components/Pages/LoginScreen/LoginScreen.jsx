@@ -28,7 +28,6 @@ const LoginScreen = () => {
           <h3>Ready to watch. Enter your email to create or restart your membership</h3>
           <div className="login-input">
            <form action="">
-            <input type="email" placeholder = "Enter email " />
             <button className = "login-screen-get-button" onClick = {handleClick}>Get Started </button>
            </form>
           </div>

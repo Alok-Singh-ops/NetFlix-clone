@@ -1,6 +1,6 @@
 .movie-details {
   width: 98%;
-  height: 18rem;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
   margin: 3rem 0 3rem 0.5rem;
@@ -56,7 +56,6 @@
 
 .background-image {
   width: 40%;
-  height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
