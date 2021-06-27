@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 import './searchResult.css'
-import Footer from '../../Footer/Footer';
 
 
 const SearchResult = ({element}) => {
@@ -36,7 +35,6 @@ const SearchResult = ({element}) => {
         </div>
     </div>
 
-    <Footer/>
     </>
   )
 }

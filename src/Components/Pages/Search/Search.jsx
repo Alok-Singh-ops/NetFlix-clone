@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { useLocation } from 'react-router'
 import Navbar from '../../Navbar/Navbar'
 import SearchForm from '../../SearchForm/SearchForm'
+import Footer from '../../Footer/Footer';
 
 import Loading from '../../Loading/Loading'
 import SearchResult from './SearchResult'
@@ -31,6 +32,9 @@ const Search = () => {
 
 
   return (
+    <>
+
+
     <div className = 'searched-video'>
       <Navbar/>
       {/* <SearchForm /> */}
@@ -44,6 +48,8 @@ const Search = () => {
       </div>
       }
     </div>
+    <Footer />
+    </>
   )
 }
 
