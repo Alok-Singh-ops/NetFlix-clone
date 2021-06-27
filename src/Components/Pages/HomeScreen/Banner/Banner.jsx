@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-
+import { Link } from 'react-router-dom';
 
 
 import  './Banner.css'
@@ -42,7 +42,12 @@ console.log(movie);
       <div className="banner-contents">
         <h1 className = 'banner-title'>{movie?.title_long}</h1>
         <div className="banner-buttons">
-          <button className="banner-button">Play</button>
+          <Link className = "banner-button" to = {{
+            pathname: '/video',
+            state:{
+              genre:movie
+            }
+          }}>Play</Link>
           <button className="banner-button">My List</button>
         </div>
   

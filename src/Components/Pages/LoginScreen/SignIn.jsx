@@ -15,6 +15,7 @@ const SignIn = () => {
   }
 
   const handleSignIn = (e)=>{
+    e.preventDefault();
     auth.signInWithEmailAndPassword(
       emailRef.current.value,
       passwordRef.current.value

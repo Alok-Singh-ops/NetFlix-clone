@@ -1,15 +1,17 @@
 import React,{useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import logo from "../../assests/images/netflix-logo.png";
 import SearchForm from '../SearchForm/SearchForm';
 import avatar from "../../assests/images/avatar.png";
 import './navbar.css'
 
+
+
 const Navbar = () => {
   const [show,setShow] = useState(false);
   // const [text,setText] = useState('');
 
-  // const history = useHistory();
+  const history = useHistory();
 
   const showNavbar = ()=>{
     if (window.scrollY>100) {
@@ -50,10 +52,9 @@ const Navbar = () => {
           <img className = 'nav-logo' src = {logo} alt = 'NetFlix' />
         </Link>
         <SearchForm/>
-        <img className = 'nav-avatar' src={avatar} alt = 'User' />
+        <img className = 'nav-avatar' src={avatar} alt = 'User'  onClick = {()=>{ history.push("profile")}}/>
       </div>
     </nav>
   )
 }
-
 export default Navbar

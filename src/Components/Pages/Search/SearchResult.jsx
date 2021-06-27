@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 import './searchResult.css'
-
+import Footer from '../../Footer/Footer';
 
 
 const SearchResult = ({element}) => {
@@ -13,6 +13,8 @@ const SearchResult = ({element}) => {
   
 
   return (
+    <>
+
     <div className = 'search-result' onClick = {handleClick}>
         <div className="card-img" style = {{backgroundImage: `url("${element.medium_cover_image}")`,}}>
         </div>
@@ -33,6 +35,9 @@ const SearchResult = ({element}) => {
           </div>
         </div>
     </div>
+
+    <Footer/>
+    </>
   )
 }
 
